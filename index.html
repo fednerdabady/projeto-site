@@ -1,58 +1,41 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document curso</title>
-    <link rel="stylesheet" href="estilos/style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <style>
-    .inputWithIcon  input[type=text]{
-        padding-left: 40px;
-    }
-    .inputWithIcon{
-        position: relative;
-    }
-    .inputWithIcon i{
-        position: absolute;
-        left: 0;
-        top: 8px;
-    }
-    .inputWithIcon  input[type=password]{
-        padding-left: 40px;
-    }
-    
-</style>
-</head>
-<body>
-    <!--Configurando o Banner -->
-   
-   <div class="container" >  
-           
-           
-           <form class="form-horizontal form-material" method="POST" action="#"  style="font-family: Montserrat;font-size:20px; color:#1e88e5">
-             
-               <div class=" form-group inputWithIcon ">
-                   <input type="text" name="usuario" autocomplete="off" id="usuario" class="form-control"  style="font-family: Montserrat ;font: 15px Verdana, Geneva, sans-serif; color:#1e88e5"required autofocus size="30" maxlength="30" placeholder="Email">
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Sistema de cadastro</title>
+        <meta name="author" content="Fedner Dabady ">
+        <meta name="description" content="Curso de HTML5 e CSS3">
+        <link rel="stylesheet" href="css/estilo.css">
+    </head>
+    <body>
+        <div class="container">
+            <nav>
+                <ul class="menu">
+                    <a href="index.php"><li>Cadastro</li></a>
+                    <a href="index2.phpb "><li>Consultas</li></a>
+                </ul>
+            </nav>
+            <section>
+                <h1>Cadastro de Usuarios</h1>
+                <hr><br><br>
+                
+                <form method="post" action="processa.php">
                     
-               </div>
-               <div class="form-group inputWithIcon">
-                   <input type="password" name="senha" class="form-control" required="" style="font-family: Montserrat ;font: 15px Verdana, Geneva, sans-serif;color:#1e88e5"  size="30" maxlength="30"placeholder="Senha">
                     
-               </div>
-               <div class="form-group">
-                   <input type="submit" class="btn" name="btnLogin" style="font-family: Montserrat;font-size:16px;color: whitesmoke;background-color: #1e88e5;font: 15px Verdana, Geneva, sans-serif " value="Acessar"><hr>
-                   <p class="text-center" style="font-family: Montserrat;font-size:20px;color:#1e88e5;font: 15px Verdana, Geneva, sans-serif">Esqueceu sua senha? <a href="#" id="signup" style='font-family: Montserrat;font-size:10px;font: 15px Verdana, Geneva, sans-serif;color: #ef3e2e'>Clique aqui </a> </p>
-                   <p class="text-center" style="font-family: Montserrat;font-size:15px"> <a href="#" id="signup" style='font-family: Montserrat;font-size:10px;font: 15px Verdana, Geneva, sans-serif;color: #ef3e2e'>Cadastre-se </a> </p>
-               </div>
-           </form>
-       </div>
-       <!--configurando o footer-->
-      <div class="footer " style="color:#ef3e2e; padding:1px;font-weight:bold; text-transform:none; font: 15px Verdana, Geneva, sans-serif; font-family:Montserrat ; background-color: #1a1a1a"> 
-          <img src="" />
-          <span class="flaticon-telephone-1"></span> <span class="flaticon-email-filled-closed-envelope">  © 2019 </span>
-       </div>
-</body>
+                    Nome<br>
+                    <input type="text" name="nome" class="campo" maxlength="40" required="" autofocus=""><br>
+                    Email<br>
+                    <input type="email" name="email" class="campo" maxlength="50" required=""><br>
+                    Profissão<br>
+                    <input type="tel" name="profissao" class="campo" maxlength="40" required=""><br><br>
+
+                    <input type="submit" value="Salvar" class="btn">
+                    <input type="reset" value="Limpar" class="btn">
+                    
+                    
+                </form>
+            </section>
+        </div>
+    </body>
 </html>
